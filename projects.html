@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects I'm Building</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./projects.css" />
   </head>
   <body>
     <header>
@@ -30,6 +30,115 @@
         algorithm, and the workout will become increasingly longer and more
         complex per week.
       </p>
+      <p>*****Triathlon tracker app preview coming soon!*****</p>
+      <h3>
+        I'm looking for feedback on my triathlon app. If you are an athlete and
+        are interested in helping me further develop this app, click on my
+        project above. Once you've explored the different features please fill
+        out the form below. I look forward to hearing your ideas to improve the
+        functionality and design of this app. Thank you!
+      </h2>
+    </div>
+
+    <div>
+    <form>
+      <fieldset>
+        <legend>Tell me what sport is your main jam!</legend>
+
+        <label for="name">Enter your first name:</label>
+        <input type="text" value="text" />
+
+        <label for="sport">Sport:</label>
+        <select id="sport" name="sport">
+          <option value="swim">Swim</option>
+          <option value="bike">Bike</option>
+          <option value="run">Run</option>
+          <option value="dual">Dualthon</option>
+          <option value="tri">Triathlon</option>
+        </select>
+      </fieldset>
+
+        <fieldset>
+          <legend>Preferred Contact Method:</legend>
+          <label for="email">
+            Enter your email below for updates about my app and so I can get in contact with you if I need clarification about your feedback.
+            <input type="email" id="email" minlength="10" maxlength="60"
+            required /> <br />
+
+            <label for="updates">
+              <input
+                type="checkbox"
+                id="updates"
+                name="interests"
+                value="updates"
+                checked
+              />
+             I would like to recieve updates on this super cool triathlon tracking app!
+            </label>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What interests you the most about this app? Select as many as you would like.</legend>
+          <label for="tracking">
+            <input
+              type="checkbox"
+              id="tracking"
+              name="interests"
+              value="tracking"
+            />
+            The ability to track swim, bike, and run workouts in one place
+          </label>
+
+          <label for="dynamic">
+            <input
+              type="checkbox"
+              id="dynamic"
+              name="interests"
+              value="dynamic"
+            />
+            The dynamic workout plan that adjusts when I skip or reschedule
+          </label>
+
+          <label for="summary">
+            <input
+              type="checkbox"
+              id="summary"
+              name="interests"
+              value="summary"
+            />
+            The weekly mileage and duration summary
+          </label>
+
+      <label for="personalization">
+            <input
+              type="checkbox"
+              id="personalization"
+              name="interests"
+              value="personalization"
+            />
+            The personalized training plan that progresses automatically          
+          </label>
+
+          <label for="interface">
+            <input
+              type="checkbox"
+              id="interface"
+              name="interests"
+              value="interface"
+            />
+            The clean and easy-to-use interface
+          </label>
+        </fieldset>
+
+          <fieldset>
+          <label for="other">Please enter other feedback below. Please be specific!</label><br />
+                <textarea id="message" name="message" rows="4" cols="30" placeholder="A feature of this app that could be improved is..."></textarea><br /><br />
+              
+                <button type="submit">Submit</button>
+        </fieldset>
+
+      </form>
     </div>
   </body>
 </html>
